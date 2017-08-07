@@ -2,13 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>PlayNgxDomSprinkle</title>
+  <title>Angular: DOM sprinkle</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
 </head>
 <body>
-  <app-root></app-root>
+  <app-root-regular></app-root-regular>
+
+  <hr />
+
+  <app-root>
+    <h1>Angular App, <small>with all content created dynamically</small></h1>
+    <p><strong>Original content from inside <code>&lt;app-root /&gt;</code>, projected and executed.</strong></p>
+
+    <p>
+      MD button (factory overrides class on root el...)
+      <button md-raised-button>Button from MD</button>
+    </p>
+    <p>
+      MD button with manually applied class on its root element:
+      <button md-raised-button class="mat-raised-button">Button from MD</button>
+    </p>
+
+    <hr />
+
+    A-COMPONENT:
+    <a-component prop="foo"></a-component>
+
+    B-COMPONENT:
+    <b-component></b-component>
+
+    <hr />
+
+    <ng-wrapper>
+      <button md-raised-button class="mat-raised-button">Raised button</button>
+      Some content to project inside <code>&lt;ng-wrapper /&gt;</code> component.
+      <hr />
+      And another A component inside ng-wrapper, with `prop` set:
+      <a-component prop="666"></a-component>
+    </ng-wrapper>
+  </app-root>
 </body>
 </html>

@@ -1,0 +1,43 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  margin: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, b, strong {
+  font-weight: 400;
+}
+h1, h2, h3, h4, h5 {
+  margin: .5rem 0;
+}
+
+hr {
+  border: 0 none;
+  border-bottom: 1px dotted #ddd;
+}
+
+app-root, app-root-regular {
+  display: block;
+  margin: 0 auto 2rem;
+  max-width: 1000px;
+}
+
+//
+//
+//
+.component-wrapper {
+  display: block;
+  margin: 1rem 0;
+  padding: .5rem 1rem;
+  border: 1px dotted #333333;
+  outline-offset: 2px;
+
+  &:hover {
+    border-style: solid;
+    outline: 1px solid rgba(red, .2);
+  }
+}
+span.component-wrapper { display: inline-block }
