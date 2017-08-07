@@ -5,12 +5,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port=4568",
+    "start:prod": "ng serve --port=4569 -prod",
     "build": "ng build",
-    "build:prod": "ng build --progress=false --aot=true --target=production --environment=dev",
+    "build:prod": "ng build --progress=false -prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "firebase deploy --only hosting -P play-ngx-dom-sprinkle"
+    "deploy": "firebase deploy -P play-ngx-dom-sprinkle"
   },
   "private": true,
   "dependencies": {
