@@ -6,9 +6,11 @@
     "ng": "ng",
     "start": "ng serve --port=4568",
     "build": "ng build",
+    "build:prod": "ng build --progress=false --aot=true --target=production --environment=dev",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "firebase deploy --only hosting -P play-ngx-dom-sprinkle"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +26,7 @@
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
     "core-js": "^2.4.1",
+    "firebase-tools": "^3.9.2",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },

@@ -1,6 +1,8 @@
 # Angular DOM sprinkling
 
-I.e. applying Angular framework on existing HTML and bootstrapping all component from there on the fly.
+I.e. applying Angular framework on existing HTML and bootstrapping all component from there on the fly. With current approach, all AoT compatible (so no JiT compiler included).
+
+See working [live demo](https://play-ngx-dom-sprinkle.firebaseapp.com/).
 
 ## Inspiration / read
 
